@@ -42,3 +42,5 @@ config.action_mailer.raise_delivery_errors = false
 
 # No email in production log
 config.action_mailer.logger = nil
+
+config.action_controller.session = { :key => "_myapp_session", :secret => "gland.lyon.raven.tp.9f.clomp.gino.luzon" }
