@@ -15,7 +15,7 @@ end
 ENV['BUNDLE_GEMFILE'] = File.expand_path('../Gemfile', File.dirname(__FILE__))
 require 'bundler/setup'
 
-worker_processes 4
+worker_processes 2
 working_directory APP_ROOT
 
 user "unicorn", "unicorn"

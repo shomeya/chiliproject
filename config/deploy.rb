@@ -111,12 +111,19 @@ EOF
   
   after 'deploy:update', 'deploy:after_update_code'
 
-  desc "restart unicorn" 
+  desc "upgrade unicorn" 
   task :upgrade_unicorn do
     run "/etc/init.d/unicorn-#{application} upgrade"
   end
   
   after 'deploy', 'deploy:upgrade_unicorn'
 
+  task :start do
+    run "/etc/init.d/unicorn-redmine start"
+  end
+  
+  task :stop do
+    run "/etc/init.d/unicorn-redmine stop"
+  end
 
 end
