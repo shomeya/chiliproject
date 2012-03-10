@@ -14,6 +14,7 @@ gem 'gravatarify', '~> 3.0.0'
 gem "fastercsv", "~> 1.5.0", :platforms => [:ruby_18, :jruby, :mingw_18]
 gem "unicorn"
 gem "tzinfo", "~> 0.3.31" # Fixes #903. Not required for Rails >= 3.2
+gem "unicorn"
 
 group :test do
   gem 'shoulda', '~> 2.10.3'

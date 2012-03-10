@@ -1,3 +1,4 @@
+
 require "bundler/capistrano"
 
 set :application, "redmine"
@@ -127,3 +128,4 @@ EOF
   end
 
 end
+
