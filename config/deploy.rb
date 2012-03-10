@@ -1,3 +1,5 @@
+require "bundler/capistrano"
+
 set :application, "redmine"
 set :repository,  "git@github.com:shomeya/chiliproject.git"
 
