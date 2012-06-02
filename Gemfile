@@ -55,7 +55,7 @@ end
 # orders of magnitude compared to their native counterparts. You have been
 # warned.
 
-platforms :mri, :mingw do
+platforms :mri, :mingw, :rbx do
   group :mysql2 do
     gem "mysql2", "~> 0.2.7"
   end
@@ -77,7 +77,7 @@ platforms :mri_18, :mingw_18 do
   end
 end
 
-platforms :mri_19, :mingw_19 do
+platforms :mri_19, :mingw_19, :rbx do
   group :sqlite do
     gem "sqlite3"
   end
